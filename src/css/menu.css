@@ -48,7 +48,7 @@
     position: absolute;
     transition: 0.7s ease-in-out;
 }
-
+/*Posicionamento do hamburguer*/
 .header .hamburguer:before{
     top:-10px;
 }
@@ -60,7 +60,7 @@
 .header input {
     display: none;
 }
-
+/*Rotação do hamburguer*/
 .header input:checked ~ label .hamburguer{
     transform: rotate(45deg);
 }
@@ -75,14 +75,14 @@
     bottom: 0;
 }
 
-@media (max-width:900px){
-    .header.menu{
+@media (max-width: 900px){
+    .header .menu{
         display: block;
     }
     .header nav ul{
         display: none;
     }
-
+/*quando o unput tiver checado vai mostrar o menu*/
     .header input:checked ~ ul{
         display: block;
     }
